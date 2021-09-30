@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "//npm.pkg.github.com/:_authToken=${NPM_TOKEN}" >> /root/.npmrc
+sudo echo "//npm.pkg.github.com/:_authToken=${NPM_TOKEN}" >> /root/.npmrc
 
 npm install
 npm run build
