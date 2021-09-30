@@ -1,6 +1,7 @@
 #!/bin/bash
-
+cat assemble
+mkdir /root/.npm
 sudo echo "//npm.pkg.github.com/:_authToken=${NPM_TOKEN}" >> /root/.npmrc
 
-npm install
+npm install /root/ -g --unsafe-perm exp
 npm run build
