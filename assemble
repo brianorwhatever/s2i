@@ -1,7 +1,6 @@
 #!/bin/bash
 cat /tmp/scripts/assemble
-mkdir /root/.npm
-sudo echo "//npm.pkg.github.com/:_authToken=${NPM_TOKEN}" >> /root/.npmrc
+echo "//npm.pkg.github.com/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
 
-npm install /root/ -g --unsafe-perm exp
+npm install
 npm run build
