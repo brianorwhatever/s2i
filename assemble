@@ -1,5 +1,5 @@
 #!/bin/bash
-cat assemble
+cat /tmp/scripts/assemble
 mkdir /root/.npm
 sudo echo "//npm.pkg.github.com/:_authToken=${NPM_TOKEN}" >> /root/.npmrc
 
