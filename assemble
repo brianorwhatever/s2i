@@ -5,6 +5,8 @@ cd /tmp/src
 sed -i '7s/.*//' package.json
 sed -i '40s/.*//' package.json
 
+cat package.json
+
 rm package-lock.json
 npm install
 npm run build
