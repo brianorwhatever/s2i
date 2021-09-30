@@ -1,10 +1,10 @@
 #!/bin/bash
 
 cat /tmp/scripts/assemble
-echo "//npm.pkg.github.com/:_authToken=${NPM_TOKEN}" >> ~/.npmrc
+echo "//npm.pkg.github.com/:_authToken=${NPM_TOKEN}" >> $HOME/.npmrc
 
 cd /tmp/src
 
-ls
+ls /home
 npm install
 npm run build
