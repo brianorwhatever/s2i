@@ -5,6 +5,6 @@ echo "//npm.pkg.github.com/:_authToken=${NPM_TOKEN}" >> $HOME/.npmrc
 
 cd /tmp/src
 
-ls /home
+echo $HOME
 npm install
 npm run build
