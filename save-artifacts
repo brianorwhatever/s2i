@@ -1,8 +1,8 @@
 #!/bin/bash
 
-pushd ${HOME}
-if [ -d deps ]; then
+pushd /tmp/src >/dev/null
+if [ -d dist ]; then
     # all deps contents to tar stream
-    tar cf - deps
+    tar cf - dist
 fi
-popd
+popd >/dev/null
