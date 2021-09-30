@@ -3,6 +3,6 @@
 cd /tmp/src
 
 sed -i '7s/.*//' package.json
-
+rm package-lock.json
 npm install
 npm run build
