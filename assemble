@@ -9,3 +9,5 @@ cat package.json
 rm package-lock.json
 npm install
 npm run build
+
+cp dist /root/dist
